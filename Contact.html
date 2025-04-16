@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.osdeliver.net/npm/swiper@li/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjsCloudplare.com/ajax/libs/font-awesome/6.6/scs/all min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Brooks Market</title>
+  </head>
+    <header>
+        <break>
+        <nav class="navbar section content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Brooks Market</h2>
+            </a>
+            <button id="menu-close-button" class="fasfa-times"></button>
+            <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="LCA Brooks Market.html" class="nav-link">Home</a>
+            </li>
+            </ul>
+            <ul>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </li>
+            </ul>
+            <ul>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Product</a>
+            </li>
+            </ul>
+            <ul>
+            <li class="nav-item">
+                <a href="Contact.html" class="nav-link">Contact</a>
+            </li>
+            </ul>
+            <button id="menu-open-button" class="fasfa-times"></button>
+            </li>
+            </ul>
+            </nav>
+        </break>
+        </header>
+        <style>
+            .contact-section .contact-info img {
+                width: 30px;
+            }
+        </style>
+        <body>
+        <main>
+           <section class="contact-section">
+            <h2 class="section-title">Contact Us</h2>
+                <div class="section-content">
+                    <ul class="contact-info-list">
+                        <li class="contact-info">
+                            <i class="fa-solid fa-location-crosshairs"><img src="location-icon-24.png"></i>
+                            <p>Address: 328 7 st E Brooks Ab, T1R 1B5</p>
+                            </li>
+                            <li class="contact-info">
+                                <i class="fa-regular fa-envelope"><img src="messages-icon.png"></i>
+                                <p>Email: <a href="www.yahoo.com">brooksmarket@yahoo.com</a></p>
+                                </li>
+                                <li class="contact-info">
+                                    <i class="fa-solid fa-phone"><img src="phone-icon--25.png"></i>
+                                    <p>Phone No: (403) 794-3038</p>
+                                    </li>
+                                    <li class="contact-info">
+                                        <i class="fa-regular fa-clock"><img src="time-clock.png"></i>
+                                        <p>Time: Monday - Thursday 11:00am - 6:30pm</p>
+                                    </li>
+                                    <li class="contact-info">
+                                        <i class="fa-regular fa-clock"><img src="time-clock.png"></i>
+                                        <p>Time: Friday - Sunday  11:00am - 7:30pm</p>
+                                    </li>
+                                    <li class="contact-info">
+                                        <i class="fa-solid fa-globe"><img src="facebook-new.png"></i>
+                                        <p>Facebook Page:</p><a href="https://www.facebook.com/profile.php?id=61573879321492"><p>LCA Brooks Market</p></a> 
+                                    </li>
+                                
+                                <form onsubmit="emailSend(); reset(); return false;" class="contact-form">
+                                    <input type="text" placeholder="Your Name" class="form-input" required>
+                                    <input type="email" placeholder="Your Email" class="form-input" required>
+                                    <input type="phone" placeholder="Phone No." class="form-input" required>
+                                    <textarea placeholder="message" class="form-input" required></textarea>
+                                    <button type="submit" class="submit-button">Submit</button>
+                                </form> 
+                            </i>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    function emailSend(){
+                        var userName = document.getElementById('name').value;
+                        var phone = document.getElementById('phone').value;
+                        var email = document.getElementById('email').value;
+                        var message = document.getElementById('message').value;
+
+                        var messagebody = "name " + userName +
+                        "<br/> Phone " + phone +
+                        "<br/> Email " + email +
+                        "<br/> Message" + message;
+                        Email.Send({
+                            Host : "smtp.elasticemail.com",
+                            Username : "brooksmarket@yahoo.com",
+                            Password : "5CBF090B786780BAD7FDAD362EDD13E90D0E",
+                            To : 'crisesmisis@gmail.com',
+                            From : "brooksmarket@yahoo.com",
+                            Body : messageBody
+                        }).then(
+                         message => {
+                            if(message=='OK'){
+                                swal("Secussful", "You Click the button!", "success");
+                            }
+                            else{
+                                swal("Error", "You Clicked the button", "error");
+                            }
+                         }
+                        );
+                    }
+                </script>
+                <!--footers-->
+            <footer class="footer-section">
+                <div class="section-content">
+                    <p class="copy right-text"></p>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link">
+                            <i class="fa-brands fa-facebook">
+                            </i>
+
+            <p class="policy-text">
+                <a href="#" class="policy-link"></a>
+                <spam class="separator"></spam>
+            </p>
+            </a>
+            </div>
+             </div>
+            </footer>
+            </section>
+        </main>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="Contact form to email.js"></script>
+            <!--Linking Swiper Script-->
+        <script src="https://cdn.jsdeliver.net/npm/swiper@/1/swiper-bundle.min.js">
+
+        </script>
+        <script href="Script.js"></script>
+    </body>      
+    </html>      
